@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="bg">#0B0B0B</color>
+    <color name="padding">#222224</color>
+    <color name="extra">#2e2e30</color>
+
+    <color name="button">#3346BE</color>
+    <color name="details">#4657AF</color>
+    <color name="texting">#f7f7f7</color>
+    <color name="clock">#48C4C2</color>
+
+    <color name="axis">#535355</color>
+    <color name="naming">#808081</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/round"
+    tools:context=".Analyze">
+
+    <TextView
+        android:id="@+id/analyzeTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="14dp"
+        android:text="ANALYZE"
+        android:textColor="@color/texting"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/analyzeGraph"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="30dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzeTitle" />
+
+    <LinearLayout
+        android:id="@+id/analyzeDate"
+        android:layout_width="80dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_extra"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/analyzeTimes"
+        app:layout_constraintStart_toStartOf="@+id/analyzeGraph"
+        app:layout_constraintTop_toTopOf="@+id/analyzeTimes">
+
+        <TextView
+            android:id="@+id/analyzeDay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".4"
+
+            android:gravity="center"
+            android:text="14"
+            android:textColor="@color/texting"
+            android:textSize="50dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/analyzeMonth"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+
+            android:gravity="center"
+            android:text="Sep"
+            android:textColor="@color/naming"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/analyzeTimes"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/round_extra"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="@+id/analyzeGraph"
+        app:layout_constraintTop_toBottomOf="@+id/analyzeGraph">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".7"
+
+                android:gravity="center|left"
+                android:text="Went to bed >"
+                android:textColor="@color/naming"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/analyzeSleepStart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+
+                android:gravity="center"
+                android:text="10:17"
+                android:textColor="@color/texting"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".7"
+
+                android:gravity="center|left"
+                android:text="Woke up >"
+                android:textColor="@color/naming"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/analyzeSleepEnd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+
+                android:gravity="center"
+                android:text="08:15"
+                android:textColor="@color/texting"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight=".33"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_weight=".7"
+
+                android:gravity="center|left"
+                android:text="In bed time >"
+                android:textColor="@color/naming"
+                android:textSize="13dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/analyzeSleepBed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight=".3"
+
+                android:gravity="center"
+                android:text="6h83m"
+                android:textColor="@color/texting"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/analyzeSleepMode"
+        android:layout_width="345dp"
+        android:layout_height="48dp"
+
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="SLEEP"
+        android:textColor="@color/texting"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/analyzeTimes" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
